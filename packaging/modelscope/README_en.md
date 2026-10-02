@@ -45,11 +45,12 @@ uniform distribution, 1 for certainty.
 
 ## What it is bad at, stated plainly
 
-- **XNLI (8 languages) is at chance.** Three-way, baseline 33.3%; it scores 34.0–42.0%. Eight times
+- **XNLI (8 languages) is at chance.** Three-way, baseline 33.3%; on the shipped 3-seed table it
+  scores **34.0–39.7%** (the seed-0-only build reached 42.0% at best). Eight times
   more data and a wider head both leave it flat, so this is the frozen backbone losing the
   information, not under-training.
-- **`boolq` is below "always answer yes"** (59.17% vs a 61.7% majority class) and needs T=2.0 to stop
-  over-claiming.
+- **`boolq` is below "always answer yes"** (59.83% vs a 61.67% majority class -- 370 of the 600
+  official test rows are "yes") and needs T=2.0 to stop over-claiming.
 - **It does not read the rubric.** Re-ordering a trained head's option list drops `ag_news` accuracy
   from 87.5% to 21.9%, so treat it as fixed-label classification, not as a criteria reader.
 - **The ten MASSIVE rows share one head.** Those table rows are one model read on ten test splits,
