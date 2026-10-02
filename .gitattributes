@@ -1,0 +1,4 @@
+# Line endings, pinned. Without this git checks out .py/.sh with CRLF on a machine whose
+# core.autocrlf is true, and the next diff across that boundary reads as every file having been
+# rewritten -- which is exactly when a real two-line change stops being visible.
+* text=auto eol=lf

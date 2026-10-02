@@ -1,0 +1,41 @@
+
+########## accuracy, T=1, mean over 3 seeds ##########
+task                     labels teacher-hard   teacher-s2 teacher-s1s2
+sst5                     35.50%       32.83%       32.17%       33.67%
+
+########## top-label ECE (lower better), T=1, mean over 3 seeds ##########
+task                     labels teacher-hard   teacher-s2 teacher-s1s2
+sst5                     0.1086       0.1705       0.0493       0.0467
+
+########## accuracy, after the dev-fitted temperature, mean over 3 seeds ##########
+task                     labels teacher-hard   teacher-s2 teacher-s1s2
+sst5                     35.50%       32.83%       32.17%       33.67%
+
+########## top-label ECE (lower better), after the dev-fitted temperature, mean over 3 seeds ##########
+task                     labels teacher-hard   teacher-s2 teacher-s1s2
+sst5                     0.0526       0.0388       0.0493       0.0483
+
+########## paired vs shipped, per task (T=1) ##########
+(positive accuracy delta = better; negative ECE delta = better)
+task                            teacher-hard                teacher-s2              teacher-s1s2
+sst5                         -2.67pt +0.0619           -3.33pt -0.0594           -1.83pt -0.0619
+
+########## those deltas averaged over the tasks (n=1) ##########
+arm                            d_acc             d_ece   acc wins   ece wins
+teacher-hard              -2.67¡Ànanpt      +0.0619¡Ànan      0/1      0/1
+teacher-s2                -3.33¡Ànanpt      -0.0594¡Ànan      0/1      1/1
+teacher-s1s2              -1.83¡Ànanpt      -0.0619¡Ànan      0/1      1/1
+
+per-seed accuracy:
+  labels         seed 0  acc 0.3717  ece 0.1217
+  labels         seed 1  acc 0.3400  ece 0.1142
+  labels         seed 2  acc 0.3533  ece 0.0900
+  teacher-hard   seed 0  acc 0.3483  ece 0.1855
+  teacher-hard   seed 1  acc 0.3067  ece 0.1675
+  teacher-hard   seed 2  acc 0.3300  ece 0.1587
+  teacher-s2     seed 0  acc 0.3167  ece 0.0281
+  teacher-s2     seed 1  acc 0.3400  ece 0.0557
+  teacher-s2     seed 2  acc 0.3083  ece 0.0640
+  teacher-s1s2   seed 0  acc 0.3483  ece 0.0402
+  teacher-s1s2   seed 1  acc 0.3333  ece 0.0337
+  teacher-s1s2   seed 2  acc 0.3283  ece 0.0663

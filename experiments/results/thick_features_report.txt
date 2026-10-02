@@ -1,0 +1,37 @@
+widths: [('last', 768), ('pooled', 768), ('two_layer', 1536)]
+
+########## accuracy, T=1, mean over 3 seeds ##########
+task                     last     pooled  two_layer
+massive_zh             33.11%     45.55%     46.58%
+go_emotions            34.00%     38.33%     38.20%
+laya_category          80.33%     90.33%     84.67%
+
+########## top-label ECE (lower better), T=1, mean over 3 seeds ##########
+task                     last     pooled  two_layer
+massive_zh             0.0975     0.1089     0.1350
+go_emotions            0.0662     0.0640     0.0455
+laya_category          0.0955     0.0914     0.0837
+
+########## accuracy, after the dev-fitted temperature, mean over 3 seeds ##########
+task                     last     pooled  two_layer
+massive_zh             33.11%     45.55%     46.58%
+go_emotions            34.00%     38.33%     38.20%
+laya_category          80.33%     90.33%     84.67%
+
+########## top-label ECE (lower better), after the dev-fitted temperature, mean over 3 seeds ##########
+task                     last     pooled  two_layer
+massive_zh             0.0747     0.0858     0.0933
+go_emotions            0.0662     0.0555     0.0455
+laya_category          0.0979     0.0560     0.0768
+
+########## paired vs shipped, per task (T=1) ##########
+(positive accuracy delta = better; negative ECE delta = better)
+task                              pooled             two_layer
+massive_zh              +12.44pt +0.0113      +13.47pt +0.0375
+go_emotions              +4.33pt -0.0022       +4.20pt -0.0207
+laya_category           +10.00pt -0.0040       +4.33pt -0.0118
+
+########## those deltas averaged over the tasks (n=3) ##########
+arm                            d_acc             d_ece   acc wins   ece wins
+pooled                    +8.93¡À2.40pt      +0.0017¡À0.0048      3/3      2/3
+two_layer                 +7.33¡À3.07pt      +0.0017¡À0.0181      3/3      2/3

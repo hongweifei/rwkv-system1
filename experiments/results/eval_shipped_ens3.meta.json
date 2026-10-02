@@ -1,0 +1,10 @@
+{
+ "ensemble_seeds": 3,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "backbone": "rwkv7-g1d-0.1b",
+ "tasks": 34
+}

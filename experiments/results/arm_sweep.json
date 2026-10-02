@@ -1,0 +1,173 @@
+[
+ {
+  "task": "laya_category",
+  "arm": "shipped",
+  "seed": 0,
+  "seconds": 25.6,
+  "n_test": 100,
+  "fitted_temperature": 0.7,
+  "t1": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.10223507136106491,
+   "nll": 0.5117513537406921
+  },
+  "fit": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.10389440506696701,
+   "nll": 0.5196016430854797
+  },
+  "params": 264705
+ },
+ {
+  "task": "laya_category",
+  "arm": "shipped",
+  "seed": 1,
+  "seconds": 8.6,
+  "n_test": 100,
+  "fitted_temperature": 0.7,
+  "t1": {
+   "accuracy": 0.8100000023841858,
+   "ece": 0.09351296722888947,
+   "nll": 0.5051012635231018
+  },
+  "fit": {
+   "accuracy": 0.8100000023841858,
+   "ece": 0.10453590750694275,
+   "nll": 0.5084993839263916
+  },
+  "params": 264705
+ },
+ {
+  "task": "laya_category",
+  "arm": "shipped",
+  "seed": 2,
+  "seconds": 9.6,
+  "n_test": 100,
+  "fitted_temperature": 0.7,
+  "t1": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.09071698784828186,
+   "nll": 0.4970591068267822
+  },
+  "fit": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.0851525068283081,
+   "nll": 0.5107697248458862
+  },
+  "params": 264705
+ },
+ {
+  "task": "laya_category",
+  "arm": "w64",
+  "seed": 0,
+  "seconds": 6.7,
+  "n_test": 100,
+  "fitted_temperature": 0.6,
+  "t1": {
+   "accuracy": 0.8399999737739563,
+   "ece": 0.10075919330120087,
+   "nll": 0.42456570267677307
+  },
+  "fit": {
+   "accuracy": 0.8399999737739563,
+   "ece": 0.09579890966415405,
+   "nll": 0.4107504189014435
+  },
+  "params": 53889
+ },
+ {
+  "task": "laya_category",
+  "arm": "w64",
+  "seed": 1,
+  "seconds": 6.9,
+  "n_test": 100,
+  "fitted_temperature": 0.6,
+  "t1": {
+   "accuracy": 0.8299999833106995,
+   "ece": 0.13065887987613678,
+   "nll": 0.4791387915611267
+  },
+  "fit": {
+   "accuracy": 0.8299999833106995,
+   "ece": 0.11591543257236481,
+   "nll": 0.5022458434104919
+  },
+  "params": 53889
+ },
+ {
+  "task": "laya_category",
+  "arm": "w64",
+  "seed": 2,
+  "seconds": 7.8,
+  "n_test": 100,
+  "fitted_temperature": 0.6,
+  "t1": {
+   "accuracy": 0.8299999833106995,
+   "ece": 0.079655721783638,
+   "nll": 0.48545780777931213
+  },
+  "fit": {
+   "accuracy": 0.8299999833106995,
+   "ece": 0.11229176819324493,
+   "nll": 0.5294452905654907
+  },
+  "params": 53889
+ },
+ {
+  "task": "laya_category",
+  "arm": "no-rlcd",
+  "seed": 0,
+  "seconds": 7.6,
+  "n_test": 100,
+  "fitted_temperature": 1.0,
+  "t1": {
+   "accuracy": 0.7699999809265137,
+   "ece": 0.09158206731081009,
+   "nll": 0.5951601266860962
+  },
+  "fit": {
+   "accuracy": 0.7699999809265137,
+   "ece": 0.09158206731081009,
+   "nll": 0.5951601266860962
+  },
+  "params": 264705
+ },
+ {
+  "task": "laya_category",
+  "arm": "no-rlcd",
+  "seed": 1,
+  "seconds": 7.5,
+  "n_test": 100,
+  "fitted_temperature": 1.0,
+  "t1": {
+   "accuracy": 0.8100000023841858,
+   "ece": 0.09151090681552887,
+   "nll": 0.5925829410552979
+  },
+  "fit": {
+   "accuracy": 0.8100000023841858,
+   "ece": 0.09151090681552887,
+   "nll": 0.5925829410552979
+  },
+  "params": 264705
+ },
+ {
+  "task": "laya_category",
+  "arm": "no-rlcd",
+  "seed": 2,
+  "seconds": 6.1,
+  "n_test": 100,
+  "fitted_temperature": 1.0,
+  "t1": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.10991430282592773,
+   "nll": 0.6143911480903625
+  },
+  "fit": {
+   "accuracy": 0.800000011920929,
+   "ece": 0.10991430282592773,
+   "nll": 0.6143911480903625
+  },
+  "params": 264705
+ }
+]

@@ -1,0 +1,129 @@
+{
+ "corpus": "clinc_oos",
+ "n_options": 151,
+ "sizes": [
+  600,
+  150,
+  250
+ ],
+ "wall_seconds": {
+  "last": 2563.0559322999907,
+  "pooled": 1710.2776412999956
+ },
+ "rows": [
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "last",
+   "seed": 0,
+   "seconds": 247.6,
+   "n_test": 250,
+   "fitted_temperature": 1.5,
+   "t1": {
+    "accuracy": 0.23999999463558197,
+    "ece": 0.05868407338857651,
+    "nll": 3.765238046646118
+   },
+   "fit": {
+    "accuracy": 0.23999999463558197,
+    "ece": 0.09147299826145172,
+    "nll": 3.719320297241211
+   },
+   "params": 264705
+  },
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "last",
+   "seed": 1,
+   "seconds": 79.1,
+   "n_test": 250,
+   "fitted_temperature": 1.0,
+   "t1": {
+    "accuracy": 0.19200000166893005,
+    "ece": 0.09048861265182495,
+    "nll": 4.024519920349121
+   },
+   "fit": {
+    "accuracy": 0.19200000166893005,
+    "ece": 0.09048861265182495,
+    "nll": 4.024519920349121
+   },
+   "params": 264705
+  },
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "last",
+   "seed": 2,
+   "seconds": 79.9,
+   "n_test": 250,
+   "fitted_temperature": 1.2,
+   "t1": {
+    "accuracy": 0.24799999594688416,
+    "ece": 0.08094310760498047,
+    "nll": 3.723745584487915
+   },
+   "fit": {
+    "accuracy": 0.24799999594688416,
+    "ece": 0.08801408857107162,
+    "nll": 3.69136905670166
+   },
+   "params": 264705
+  },
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "pooled",
+   "seed": 0,
+   "seconds": 324.1,
+   "n_test": 250,
+   "fitted_temperature": 1.5,
+   "t1": {
+    "accuracy": 0.4320000112056732,
+    "ece": 0.14000371098518372,
+    "nll": 2.5921554565429688
+   },
+   "fit": {
+    "accuracy": 0.4320000112056732,
+    "ece": 0.12169398367404938,
+    "nll": 2.5009827613830566
+   },
+   "params": 264705
+  },
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "pooled",
+   "seed": 1,
+   "seconds": 82.0,
+   "n_test": 250,
+   "fitted_temperature": 1.5,
+   "t1": {
+    "accuracy": 0.4320000112056732,
+    "ece": 0.11400353908538818,
+    "nll": 2.7240538597106934
+   },
+   "fit": {
+    "accuracy": 0.4320000112056732,
+    "ece": 0.11014457046985626,
+    "nll": 2.5763540267944336
+   },
+   "params": 264705
+  },
+  {
+   "task": "clinc_oos_holdout",
+   "arm": "pooled",
+   "seed": 2,
+   "seconds": 78.7,
+   "n_test": 250,
+   "fitted_temperature": 1.2,
+   "t1": {
+    "accuracy": 0.46799999475479126,
+    "ece": 0.1205597072839737,
+    "nll": 2.4941117763519287
+   },
+   "fit": {
+    "accuracy": 0.46799999475479126,
+    "ece": 0.11716732382774353,
+    "nll": 2.437649965286255
+   },
+   "params": 264705
+  }
+ ]
+}

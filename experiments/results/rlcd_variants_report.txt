@@ -1,0 +1,70 @@
+54 rows
+
+########## T=1 (no temperature fitted) ##########
+task          arm                      acc              ece           postL1
+laya_urgency  ce             0.5175¡À0.0139    0.0660¡À0.0054    0.2799¡À0.0044
+laya_urgency  ce90           0.5375¡À0.0050    0.0840¡À0.0135    0.2859¡À0.0082
+laya_urgency  proper         0.5592¡À0.0038    0.0828¡À0.0141    0.2371¡À0.0058
+laya_urgency  shipped        0.5583¡À0.0104    0.0678¡À0.0125    0.2379¡À0.0061
+laya_urgency  gauss1.0       0.5533¡À0.0146    0.0713¡À0.0186    0.2367¡À0.0055
+laya_urgency  gauss1.28      0.5583¡À0.0113    0.0695¡À0.0150    0.2383¡À0.0058
+
+banking77     ce             0.3500¡À0.0282    0.0793¡À0.0417              n/a
+banking77     ce90           0.4167¡À0.0114    0.0694¡À0.0083              n/a
+banking77     proper         0.4547¡À0.0150    0.0790¡À0.0146              n/a
+banking77     shipped        0.4593¡À0.0150    0.0741¡À0.0137              n/a
+banking77     gauss1.0       0.4553¡À0.0122    0.0802¡À0.0094              n/a
+banking77     gauss1.28      0.4553¡À0.0151    0.0794¡À0.0077              n/a
+
+ag_news       ce             0.8853¡À0.0055    0.0344¡À0.0097              n/a
+ag_news       ce90           0.8853¡À0.0055    0.0344¡À0.0097              n/a
+ag_news       proper         0.8803¡À0.0099    0.0541¡À0.0093              n/a
+ag_news       shipped        0.8817¡À0.0112    0.0572¡À0.0086              n/a
+ag_news       gauss1.0       0.8813¡À0.0091    0.0571¡À0.0098              n/a
+ag_news       gauss1.28      0.8817¡À0.0104    0.0580¡À0.0099              n/a
+
+
+########## after the dev-fitted temperature ##########
+task          arm                      acc              ece           postL1
+laya_urgency  ce             0.5175¡À0.0139    0.0660¡À0.0054    0.2799¡À0.0044
+laya_urgency  ce90           0.5375¡À0.0050    0.0840¡À0.0135    0.2859¡À0.0082
+laya_urgency  proper         0.5592¡À0.0038    0.0499¡À0.0047    0.2522¡À0.0073
+laya_urgency  shipped        0.5583¡À0.0104    0.0379¡À0.0082    0.2539¡À0.0047
+laya_urgency  gauss1.0       0.5533¡À0.0146    0.0468¡À0.0041    0.2533¡À0.0047
+laya_urgency  gauss1.28      0.5583¡À0.0113    0.0421¡À0.0038    0.2539¡À0.0047
+
+banking77     ce             0.3500¡À0.0282    0.0842¡À0.0373              n/a
+banking77     ce90           0.4167¡À0.0114    0.0694¡À0.0083              n/a
+banking77     proper         0.4547¡À0.0150    0.0790¡À0.0146              n/a
+banking77     shipped        0.4593¡À0.0150    0.0741¡À0.0137              n/a
+banking77     gauss1.0       0.4553¡À0.0122    0.0802¡À0.0094              n/a
+banking77     gauss1.28      0.4553¡À0.0151    0.0794¡À0.0077              n/a
+
+ag_news       ce             0.8853¡À0.0055    0.0279¡À0.0039              n/a
+ag_news       ce90           0.8853¡À0.0055    0.0279¡À0.0039              n/a
+ag_news       proper         0.8803¡À0.0099    0.0300¡À0.0037              n/a
+ag_news       shipped        0.8817¡À0.0112    0.0303¡À0.0040              n/a
+ag_news       gauss1.0       0.8813¡À0.0091    0.0271¡À0.0033              n/a
+ag_news       gauss1.28      0.8817¡À0.0104    0.0308¡À0.0092              n/a
+
+########## paired vs shipped, per-seed deltas ##########
+(negative accuracy delta = worse; negative ece delta = better calibration)
+task          arm                      dacc              dece           dpostL1
+laya_urgency  ce             -0.0408¡À0.0022    -0.0018¡À0.0076    +0.0419¡À0.0044
+laya_urgency  ce90           -0.0208¡À0.0073    +0.0162¡À0.0018    +0.0480¡À0.0080
+laya_urgency  proper         +0.0008¡À0.0042    +0.0149¡À0.0017    -0.0009¡À0.0002
+laya_urgency  gauss1.0       -0.0050¡À0.0038    +0.0035¡À0.0037    -0.0012¡À0.0014
+laya_urgency  gauss1.28      +0.0000¡À0.0014    +0.0017¡À0.0019    +0.0004¡À0.0001
+
+banking77     ce             -0.1093¡À0.0228    +0.0053¡À0.0316               n/a
+banking77     ce90           -0.0427¡À0.0123    -0.0047¡À0.0074               n/a
+banking77     proper         -0.0047¡À0.0007    +0.0050¡À0.0081               n/a
+banking77     gauss1.0       -0.0040¡À0.0020    +0.0061¡À0.0049               n/a
+banking77     gauss1.28      -0.0040¡À0.0031    +0.0053¡À0.0037               n/a
+
+ag_news       ce             +0.0037¡À0.0037    -0.0228¡À0.0083               n/a
+ag_news       ce90           +0.0037¡À0.0037    -0.0228¡À0.0083               n/a
+ag_news       proper         -0.0013¡À0.0009    -0.0031¡À0.0006               n/a
+ag_news       gauss1.0       -0.0003¡À0.0012    -0.0001¡À0.0013               n/a
+ag_news       gauss1.28      +0.0000¡À0.0006    +0.0008¡À0.0008               n/a
+

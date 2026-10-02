@@ -1,0 +1,43 @@
+# Environments and bytecode
+.venv/
+__pycache__/
+*.pyc
+
+# Checkpoints: 1.2 GB, re-downloadable (pipeline.checkpoint prints the modelscope command).
+weights/
+
+# Derived artifacts.  cache/ is ~50 MB per task set and its file names encode the fingerprint of
+# the template and token budgets; runs/ holds trained heads plus their config+history.  Both are
+# reproducible from the code plus the downloads above, so neither belongs in history.
+cache/
+runs/
+
+# The upload-ready ModelScope package, produced by scripts/build_modelscope_pkg.py from `runs/` +
+# `packaging/`.  Its authored parts (the card prose, service.py, selfcheck) live in packaging/ and
+# *are* tracked; this is only the assembled copy.
+dist/
+
+# A harness that saved a torch pickle here wrote a 3 KB stray next to the JSON/TXT
+# results it duplicates; results/ is evidence, and evidence is text.
+experiments/results/*.pt
+
+# The console transcript a chain writes next to its JSON, and whose `*_RC=` lines it then greps to
+# decide whether a step already ran.  That is run state, not evidence: the numbers live in the
+# JSONs the card and the acceptance script read, and a fresh checkout has no `runs/` either, so a
+# chain on a new clone has to re-run regardless.  46 of these were 0.96 MB -- half the repo.
+experiments/results/*.log
+
+# Reference material kept beside the code but never imported: `fla/` (flash-linear-attention's
+# RWKV-7 modules), `rwkv_official/` (the `rwkv` 0.8.32 package's model + tokenizer source), and
+# `hf_0.4b_tensor_names.json` -- which is the HuggingFace `model.safetensors.index.json` for the
+# 0.4b checkpoint (795 HF-named entries with data_offsets), kept to compare HF naming against the
+# native `.pth` layout (798 tensors, `blocks.N.att.*`); the two name sets do not overlap.
+# `git grep "refs/"` over the tracked source is empty, so nothing here is a runtime dependency.
+# They are re-fetchable (`rwkv` 0.8.32 and flash-linear-attention from a package index), but only the
+# rwkv copy records its version on disk -- the fla files carry no version marker, so treat that
+# directory as a snapshot of whatever was installed when it was taken.
+refs/
+
+# Secrets.  The online teacher's DashScope key lives here and must never reach history; nothing in
+# the tree reads it except by `set -a; . ./.env; set +a` in the shell that launches a teacher run.
+.env

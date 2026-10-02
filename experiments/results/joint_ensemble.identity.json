@@ -1,0 +1,212 @@
+{
+ "massive_zh": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_en": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_de": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_fr": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_es": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_pt": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_ru": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_ar": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_ja": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ },
+ "massive_ko": {
+  "template": [
+   "\n",
+   " question: ",
+   "\n"
+  ],
+  "state_cap": null,
+  "ctx_tokens": 8192,
+  "marker_rule": 2,
+  "tokenizer": {
+   "name": "rwkv_vocab_v20230424.txt",
+   "size": 1093733,
+   "digest": "c7db1d5e260a"
+  },
+  "checkpoint": {
+   "name": "rwkv7-g1d-0.1b-20260129-ctx8192.pth",
+   "size": 382223725,
+   "digest": "6c3a2cc6e5c0"
+  },
+  "data_version": 2
+ }
+}
